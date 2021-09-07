@@ -1,0 +1,19 @@
+.nav {
+    height: auto;
+
+}
+.nav-link {
+    margin: auto 20px;
+    color: #090C9B;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+body {
+    background: #FBFFF1;
+    margin: 0;
+    padding: 0;
+}
+header {
+    margin: 20px 36px;
+}
