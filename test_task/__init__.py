@@ -10,5 +10,8 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 redis_cli = FlaskRedis(app)
 
+# Init redis counter
+redis_cli.set('count_docs', 0)
+
 
 from test_task import routes
