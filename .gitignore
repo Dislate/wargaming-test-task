@@ -1,13 +1,6 @@
-# Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
-
-# My ignored files
 venv
 test_task/test.db
-
-# Pycharm
 .idea
-
-# Git
 .git
