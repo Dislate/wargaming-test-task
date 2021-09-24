@@ -1,4 +1,4 @@
-version: "3.9"
+version: "3.3"
 services:
   web:
     build:
@@ -8,7 +8,8 @@ services:
       - "5000:5000"
     depends_on:
       - redis-db
+    volumes:
+      - ./:/app
 
   redis-db:
     image: redis:alpine
-

@@ -1,5 +1,6 @@
 from test_task import db
 
+
 class Word(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name_word = db.Column(db.String(50), unique=True, nullable=False)

@@ -14,7 +14,7 @@ def tf_idf():
         # if text document is updated we increment the counter
         redis_cli.incrby('count_docs', 1)
         # get array of all words in document and get array without duplicate
-        all_words_in_doc = request.files[form.text_doc.name].read().decode("UTF-8").split()
+        all_words_in_doc = request.files[form.file_text_doc.name].read().decode("UTF-8").split()
         set_words_if_doc = set(all_words_in_doc)
         # processing all words by coincidence
         total_match = sorted(handling_words_on_matching_in_doc(all_words_in_doc, set_words_if_doc),

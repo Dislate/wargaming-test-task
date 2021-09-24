@@ -1,4 +1,12 @@
-Test-task
+# Test-task from Wargaming TF-IDF
 
-Will be later
-Stage on develop
+#### How to install and run
+
+* Build project
+`docker-compose up`
+* First setting for project
+````bash
+docker exec -it wargaming-test-task_web sh
+docker flask start create_db
+````
+* So you can to see how the project is working, just open in browser `127.0.0.1:5000`
