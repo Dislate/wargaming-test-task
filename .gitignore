@@ -1,6 +1,6 @@
 __pycache__/
 *.py[cod]
-env
+venv
 test_task/test.db
 .idea
 .git
